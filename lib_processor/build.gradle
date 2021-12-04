@@ -1,0 +1,22 @@
+plugins {
+    id 'java-library'
+    id 'com.github.dcendents.android-maven'
+}
+group = 'github.com/2322222223'
+
+
+dependencies {
+    api project(path: ':lib_annotation')
+    implementation 'com.google.auto.service:auto-service:1.0-rc4'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
+    api 'com.squareup:javapoet:1.11.1'
+}
+//中文乱码问题（错误：编码GBK不可映射字符）
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
