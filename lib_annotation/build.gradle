@@ -3,7 +3,7 @@ plugins {
     id 'kotlin'
     id 'com.github.dcendents.android-maven'
 }
-group = 'github.com/2322222223'
+group = 'com.github.2322222223'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_7

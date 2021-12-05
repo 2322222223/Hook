@@ -41,7 +41,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    //implementation 'com.gitee.code-r:hook:1.0'
-    implementation project(path: ':lib_ams')
-    kapt project(path: ':lib_processor')
+    implementation 'com.github.2322222223:Hook:1.0'
+    //implementation project(path: ':lib_ams')
+    //kapt project(path: ':lib_processor')
 }
